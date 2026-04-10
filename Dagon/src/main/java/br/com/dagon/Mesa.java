@@ -15,6 +15,8 @@ public class Mesa extends javax.swing.JFrame {
      */
     public Mesa() {
         initComponents();
+        sortearCartas();
+
     }
 
     /**
@@ -32,6 +34,14 @@ public class Mesa extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        Acoes = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -41,36 +51,112 @@ public class Mesa extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaBonus.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaBase.png"))); // NOI18N
+        jButton2.setMaximumSize(new java.awt.Dimension(110, 187));
+        jButton2.setMinimumSize(new java.awt.Dimension(110, 187));
+        jButton2.setPreferredSize(new java.awt.Dimension(110, 187));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 320, -1, -1));
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaGato-export.png"))); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaBase.png"))); // NOI18N
+        jButton4.setMaximumSize(new java.awt.Dimension(110, 187));
+        jButton4.setMinimumSize(new java.awt.Dimension(110, 187));
+        jButton4.setPreferredSize(new java.awt.Dimension(110, 187));
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 320, -1, -1));
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaCoracao-export.png"))); // NOI18N
-        jButton3.setMaximumSize(new java.awt.Dimension(114, 170));
-        jButton3.setMinimumSize(new java.awt.Dimension(114, 170));
-        jButton3.setPreferredSize(new java.awt.Dimension(108, 187));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaBase.png"))); // NOI18N
+        jButton3.setMaximumSize(new java.awt.Dimension(110, 170));
+        jButton3.setMinimumSize(new java.awt.Dimension(110, 170));
+        jButton3.setPreferredSize(new java.awt.Dimension(110, 187));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, -1, -1));
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaLivro-export.png"))); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaBase.png"))); // NOI18N
+        jButton5.setMaximumSize(new java.awt.Dimension(110, 187));
+        jButton5.setMinimumSize(new java.awt.Dimension(110, 187));
+        jButton5.setPreferredSize(new java.awt.Dimension(110, 187));
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 320, -1, -1));
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaPeixe-export.png"))); // NOI18N
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 320, -1, -1));
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaBase.png"))); // NOI18N
+        jButton6.setMaximumSize(new java.awt.Dimension(110, 187));
+        jButton6.setMinimumSize(new java.awt.Dimension(110, 187));
+        jButton6.setPreferredSize(new java.awt.Dimension(110, 187));
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 320, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaPolvo-export.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, -1, -1));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaBase.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 30, -1, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/X-0001.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 90, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaBase.png"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 30, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/OponenteBase-0001.png"))); // NOI18N
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Oponente");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, -1, 20));
+
+        jLabel5.setBackground(new java.awt.Color(255, 102, 0));
+        jLabel5.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fundo.png"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, -1, -1));
+
+        jLabel7.setBackground(new java.awt.Color(255, 102, 0));
+        jLabel7.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fundo.png"))); // NOI18N
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, -1, -1));
+
+        jButton1.setBackground(new java.awt.Color(255, 0, 51));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("SAIR");
+        jButton1.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 102, 0)));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 70, 20));
+
+        Acoes.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        Acoes.setForeground(new java.awt.Color(255, 0, 51));
+        Acoes.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(Acoes, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 220, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MESA.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        System.exit(0);        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+   
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -102,8 +188,166 @@ public class Mesa extends javax.swing.JFrame {
             }
         });
     }
+    public int dano1 = 0;
+    public int dano2 = 0;
+    public int dano3 = 0;
+    public int dano4 = 0;
+    public int dano5 = 0;
+    
+    public Jogador jogador = new Jogador();
+    public Jogador boss = new Jogador();
+    
+    
+    
+    public void sortearCartas(){
+        
+        int[] opcoes = {1, 2,3,4,5,6};
+        int carta1 = opcoes[(int)(Math.random() * opcoes.length)];
+        int carta2 = opcoes[(int)(Math.random() * opcoes.length)];
+        int carta3 = opcoes[(int)(Math.random() * opcoes.length)];
+        int carta4 = opcoes[(int)(Math.random() * opcoes.length)];
+        int carta5 = opcoes[(int)(Math.random() * opcoes.length)];
+        
+        //carta 1
+        
+        if(carta1 == 1){
+             jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaGato-export.png")));
+             dano1 = 3;
+             
+        }
+        else if(carta1 == 2){
+             jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaPeixe-export.png")));
+             dano1 = 1;
+        }
+        else if(carta1 == 3){
+             jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaCoracao-export.png")));
+             dano1 = 3;
+        }
+        else if(carta1 == 4){
+            jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaLivro-export.png")));
+            dano1 = 5;
+        }
+        else if(carta1 == 5){
+            jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaPolvo-export.png")));
+            dano1 = 8;
+        }
+        else if(carta1 == 6){
+             jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaOlho.png")));
+             dano1 = 2;
+        }
+        
+        //carta 2
+        
+        if(carta2 == 1){
+             jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaGato-export.png")));
+             dano2 = 3;
+        }
+        else if(carta2 == 2){
+             jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaPeixe-export.png")));  
+             dano2 = 1;
+        }
+        else if(carta2 == 3){
+             jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaCoracao-export.png")));  
+             dano2 = 3;
+        }
+        else if(carta2 == 4){
+            jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaLivro-export.png")));
+            dano2 = 5;
+        }
+        else if(carta2 == 5){
+            jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaPolvo-export.png")));
+            dano2 = 8;
+        }
+        else if(carta2 == 6){
+             jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaOlho.png")));
+             dano2 = 2;
+        }
+        
+        // carta 3
+        
+        if(carta3 == 1){
+             jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaGato-export.png")));
+             dano3 = 3;
+        }
+        else if(carta3 == 2){
+             jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaPeixe-export.png"))); 
+             dano3 = 1;
+        }
+        else if(carta3 == 3){
+             jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaCoracao-export.png"))); 
+             dano3 = 3;
+        }
+        else if(carta3 == 4){
+            jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaLivro-export.png")));
+             dano3 = 5;
+        }
+        else if(carta3 == 5){
+            jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaPolvo-export.png")));
+             dano3 = 8;
+        }
+        else if(carta3 == 6){
+             jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaOlho.png")));
+              dano3 = 2;
+        }  
+        
+        // carta 4
+        
+        if(carta4 == 1){
+             jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaGato-export.png")));
+              dano4 = 3;
+        }
+        else if(carta4 == 2){
+             jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaPeixe-export.png")));
+              dano4 = 1;
+        }
+        else if(carta4 == 3){
+             jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaCoracao-export.png")));
+             dano4 = 3;             
+        }
+        else if(carta4 == 4){
+            jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaLivro-export.png")));
+             dano4 = 5;
+        }
+        else if(carta4 == 5){
+            jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaPolvo-export.png")));
+             dano4 = 8;
+        }
+        else if(carta4 == 6){
+             jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaOlho.png")));
+              dano4 = 2;
+        }
+        
+        // carta 5
+        
+        if(carta5 == 1){
+             jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaGato-export.png")));
+              dano5 = 3;
+        }
+        else if(carta5 == 2){
+             jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaPeixe-export.png")));
+              dano5 = 1;
+        }
+        else if(carta5 == 3){
+             jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaCoracao-export.png")));
+              dano5 = 3;             
+        }
+        else if(carta5 == 4){
+            jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaLivro-export.png")));
+             dano5 = 5;
+        }
+        else if(carta5 == 5){
+            jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaPolvo-export.png")));
+             dano5 = 8;
+        }
+        else if(carta5 == 6){
+             jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CartaOlho.png")));
+              dano5 = 2;
+        }        
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Acoes;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -111,5 +355,11 @@ public class Mesa extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     // End of variables declaration//GEN-END:variables
 }

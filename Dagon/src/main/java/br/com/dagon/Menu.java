@@ -49,7 +49,7 @@ public class Menu extends javax.swing.JFrame {
                 sairActionPerformed(evt);
             }
         });
-        getContentPane().add(sair, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, 220, 40));
+        getContentPane().add(sair, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 360, 220, 40));
 
         comecar.setBackground(new java.awt.Color(204, 0, 51));
         comecar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -62,7 +62,7 @@ public class Menu extends javax.swing.JFrame {
                 comecarActionPerformed(evt);
             }
         });
-        getContentPane().add(comecar, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 220, 40));
+        getContentPane().add(comecar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 280, 220, 40));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(204, 102, 0));
