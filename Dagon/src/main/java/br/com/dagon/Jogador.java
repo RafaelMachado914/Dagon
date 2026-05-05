@@ -4,7 +4,7 @@ package br.com.dagon;
 
 public class Jogador {
     
-    public int vida = 20;
+    public int vida = 10;
     public int rodadas;
 
     public Jogador() {
